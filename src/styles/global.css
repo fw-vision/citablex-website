@@ -1,0 +1,92 @@
+:root {
+  --cream: #f6f3ee;
+  --ink: #000000;
+  --paper: #ffffff;
+  --action: #ff6600;
+  --frame: #5c2999;
+  --support: #00cc88;
+  --stone: #aa8855;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--frame);
+}
+
+.wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.mark {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  max-width: 16ch;
+}
+
+.lede {
+  font-size: 1.25rem;
+  max-width: 42rem;
+}
+
+.cta {
+  display: inline-block;
+  margin: 1rem 0 2rem;
+  padding: 0.8rem 1.2rem;
+  background: var(--action);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.panel {
+  border: 2px solid var(--frame);
+  background: var(--paper);
+  padding: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.family {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.family li {
+  border-left: 4px solid var(--stone);
+  padding: 0.4rem 0 0.4rem 0.8rem;
+}
+
+.family li.now {
+  border-left-color: var(--support);
+}
+
+footer {
+  color: var(--stone);
+  font-size: 0.9rem;
+}
